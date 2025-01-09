@@ -1,0 +1,76 @@
+/* index.css */
+
+body {
+    display: flex;
+    height: 100h;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 2px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    animation: sqaure 4s infinite;
+}
+
+.eyes {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.eyes span {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.mouth {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    right: 30px;
+    height: 15px;
+    background-color: black;
+    border-radius: 0 0 15px 15px;
+}
+
+@keyframes sqaure{
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0%;
+        left: 1000%;
+    }
+    50% {
+        top: 500%;
+        left: 1000%;
+    }
+    75% {
+        top: 500%;
+        left: 0%;
+    }
+    100% {
+        top: 0%;
+        left: 0;
+    }
+}
+
